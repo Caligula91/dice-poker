@@ -68,7 +68,6 @@ function generateStraight() {
     temp_hand = null;
 }
 
-//this has bug
 function generateThreeKind() {
     const cardsThree = 3;
     const cardHigh = 1;
@@ -118,7 +117,6 @@ function generateTwoPairs() {
         hand[i] = 0;
     }
 }
-
 
 function generateOnePair() {
     const cardsPair = 2;
@@ -181,9 +179,6 @@ function getHashCode(arr) {
     generateHighCard();
 })();
 
-
 export const getRank = dice_hand => {
     return ranks.get(getHashCode(dice_hand));
 }
-
-//297
