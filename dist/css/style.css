@@ -1,6 +1,6 @@
 .wrapper {
   width: 1100px;
-  height: 800px;
+  height: 700px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -96,7 +96,7 @@
 /* INFO & RANK */
 .info__rank__bottom {
   position: absolute;
-  top: 75px;
+  top: 65px;
   left: 55px;
   width: 40%;
   height: 20%;
@@ -106,7 +106,7 @@
 }
 .info__rank__top {
   position: absolute;
-  bottom: 65px;
+  bottom: 55px;
   left: 55px;
   width: 40%;
   height: 20%;
@@ -121,7 +121,7 @@
   bottom: 20px;
   left: 30px;
   width: 45%;
-  height: 30%;
+  height: 33%;
   text-align: center;
   -webkit-box-shadow: 0px 0px 10px 15px #00000080;
   box-shadow: 0px 0px 10px 15px rgba(0, 0, 0, 0.5);
@@ -132,7 +132,7 @@
   top: 20px;
   left: 30px;
   width: 45%;
-  height: 30%;
+  height: 33%;
   text-align: center;
   -webkit-box-shadow: 0px 0px 10px 15px #00000080;
   box-shadow: 0px 0px 10px 15px rgba(0, 0, 0, 0.5);
@@ -155,7 +155,7 @@
 /* DICE SELECTED TOGGLE */
 .dice__selected__top {
   position: relative;
-  top: 30px;
+  top: 15px;
   border-radius: 10px;
   border: 0.2px outset yellow;
   padding: 0px;
@@ -164,7 +164,7 @@
 }
 .dice__selected__bottom {
   position: relative;
-  bottom: 30px;
+  bottom: 15px;
   border-radius: 10px;
   border: 0.5px outset yellow;
   padding: 0px;
@@ -235,4 +235,11 @@
 }
 .btn__fold {
   background-image: url("../img/btn_fold.png");
+}
+
+/* DICE STYLE */
+.dice__bottom,
+.dice__top {
+  width: 70px;
+  height: 70px;
 }
