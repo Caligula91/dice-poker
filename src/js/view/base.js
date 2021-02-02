@@ -36,5 +36,6 @@ export const DOMelements = {
     btnsRaiseLower: document.querySelectorAll('.btn__raise__lower'),
     btnsRaiseHigher: document.querySelectorAll('.btn__raise__higher'),
     btnsFold: document.querySelectorAll('.btn__fold'),
-    btnsCall: document.querySelectorAll('.btn__call')
+    btnsCall: document.querySelectorAll('.btn__call'),
+    btnNewGame: document.querySelector('.btn__new_game'),
 };

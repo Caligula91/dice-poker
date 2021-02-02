@@ -55,6 +55,13 @@ const state = {
 }
 window.state = state;
 
+//TEST !!
+DOMelements.btnNewGame.addEventListener('click', (e) => {
+    if (state.phase === 'end') {
+        initGame();
+    }
+});
+
 const switchPlayers = () => {
     state.players.switchPlayers();
     playerPanelView.toggleActivePlayer();
@@ -104,15 +111,9 @@ const finishGame = winner => {
     potView.updatePot(state.pot.getPot());
     playerPanelView.updatePlayerCredits('player_1', state.players.player_1.getCredits());
     playerPanelView.updatePlayerCredits('player_2', state.players.player_2.getCredits());
+    DOMelements.btnNewGame.classList.remove('disabled');
     state.phase = 'end';
 };
-
-//TEST !!
-document.querySelector('.btn__new_game').addEventListener('click', () => {
-    if (state.phase === 'end') {
-        initGame();
-    }
-});
 
 /**
  * CONTROLL ROLL BUTTONS
@@ -239,20 +240,6 @@ const controllCheckCall = type => {
     }
 };
 
-const controllBet = (() => {
-    let flag = 0;
-    return {
-        controllCheckCall: () => {
-            flag++;
-            flag = 0;
-        },
-        controllRaise: () => {
-            flag++;
-            flag = 0;
-        }
-    }
-})();
-
 /**
  * CONTROLL RAISE
  */
@@ -354,6 +341,7 @@ document.addEventListener('keypress', event => {
  * INIT APP
  */
 const initGame = () => {
+    DOMelements.btnNewGame.classList.add('disabled');
     diceContainerView.setInvisible();
     //determine who plays first
     state.players.player_1.isActive = true;

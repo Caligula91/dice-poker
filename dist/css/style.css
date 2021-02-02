@@ -243,3 +243,16 @@
   width: 70px;
   height: 70px;
 }
+
+/* NEW GAME BUTTON */
+.btn__new_game {
+  position: absolute;
+  top: 50%;
+  left: 81.5%;
+  outline: none;
+}
+.disabled {
+  border: 1px solid #999999;
+  background-color: #cccccc;
+  color: #666666;
+}
