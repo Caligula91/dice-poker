@@ -1,7 +1,8 @@
 # Dice Poker (DEVELOPMENT)
 
-Dice Poker for 2 players in hot seat mode
-To start the game, just double click on index.html in dist folder
+Dice Poker for 2 players in hot seat mode\
+
+-- To start the game, just double click on index.html in dist folder --
 
 ## Rules
 
