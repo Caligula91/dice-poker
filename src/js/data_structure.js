@@ -22,6 +22,7 @@ function generateFiveKind() {
         hand[i] = 0;
     }
 }
+
 function generateFourKind() {
     const cards = 4;
     const high_card = 1;
@@ -38,6 +39,7 @@ function generateFourKind() {
         hand[i] = 0;
     }
 }
+
 function generateFullHouse() {
     const cardsThree = 3;
     const cardsPair = 2;
